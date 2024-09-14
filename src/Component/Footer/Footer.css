@@ -1,0 +1,33 @@
+:root{
+  --bg-primary-color:#0A192F; 
+  --text-color: #CCD6F6;
+  --title: #8892B0;
+  --bg-btn-color:#800020;
+  --code : yellow;
+  --line-height: 1.4;
+  --padding: 2rem;
+  --small-font:14px;
+  --big-font: 22px;
+  --font-weight:550;
+  --border:1px solid #CCD6F6;
+  --br: 5px;
+  --pl:1.5rem;
+  --pr:1.5rem;
+  --pb:1.5rem;
+  --pt:1.5rem;
+  --mt:1rem;
+  --mb:1rem;
+  --ml:1rem;
+  --mr:1rem;
+}
+
+footer{
+  color: var(--text-color);
+  text-align: center;
+  height: 30px;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+
+

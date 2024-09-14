@@ -1,0 +1,48 @@
+.title{
+  /* margin-top: 10rem !important; */
+  text-align: center !important;
+  justify-content: center;
+  margin:  4rem auto;
+
+}
+
+:root{
+  --bg-primary-color:#0A192F; 
+  --text-color: #CCD6F6;
+  --bg-btn-color:#800020;
+  --code : yellow;
+  --line-height: 1.4;
+  --padding: 2rem;
+  --small-font:16px;
+  --big-font: 20px;
+  --font-weight:550;
+  --border:1px solid #8ecae6;
+  --br: 5px;
+  --pl:1.5rem;
+  --pr:1.5rem;
+  --pb:1.5rem;
+  --pt:1.5rem;
+  --mt:1rem;
+  --mb:1rem;
+  --ml:1rem;
+  --mr:1rem;
+
+  --navpad-left: 5%
+}
+
+
+.title h1{
+  font-size: 30px;
+  color: var(--text-color);
+  text-align: center;
+
+}
+
+div .underline{
+  width: 40px; 
+  height: 4px;
+  border-radius: var(--br);
+  background: var(--bg-btn-color);
+  text-align: center;
+  margin: auto;
+}
