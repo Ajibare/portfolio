@@ -67,9 +67,9 @@ const Work = () => {
             />
             <div className="popup-container">
             <h2 className='live-title'>{title}</h2>
-              <div className="live-view">
+              {/* <div className="live-view">
                 <a href={liveLink} target="_blank" rel="noopener noreferrer">View</a>
-              </div>
+              </div> */}
               <div className="code-view">
                 <a href={codeLink} target="_blank" rel="noopener noreferrer">Code</a>
               </div>
