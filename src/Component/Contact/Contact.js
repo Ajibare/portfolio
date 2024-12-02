@@ -49,7 +49,7 @@ const Contact = () => {
       <div className='contact'>
         <Title title='Contact'/>
         <p>\\ Submit the form below or shoot me an email  
-          <a href="mailto:ajibarebabajide1@gmail.com"> babajideajibare@gmail.com</a>
+          <a href="mailto:babajideajibare@gmail.com"> babajideajibare@gmail.com</a>
         </p>
       </div>
       <form onSubmit={handleSubmit}>

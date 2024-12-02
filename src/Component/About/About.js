@@ -14,7 +14,7 @@ const About = () => {
         Hi<span>&#128075;</span>,
          I'm Ajibare Babajide, nice to meet you. Please take a look around.</h1>
       <p className='about-me'>
-        I'm a skilled and innovative frontend developer proficient in HTML, CSS, JavaScript, React and Wordpress, with exoertise in building responsive, dynamic and user-centered web applications and a passion for creating fast, efficient and visually stunning digital experience.
+        I'm a skilled and innovative frontend developer proficient in HTML, CSS, JavaScript, React and Wordpress, with expertise in building responsive, dynamic and user-centered web applications and a passion for creating fast, efficient and visually stunning digital experience.
         Proven track record in delivering engaging user interface and contributing to user experience enhancement.
       </p>
     </div>

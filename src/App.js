@@ -5,9 +5,10 @@ import Navbar from "./Component/Navbar/Navbar.js";
 import Hero from './Component/Hero/Hero.js'
 import About from './Component/About/About.js'
 import Skills from "./Component/Skills/Skills.js";
-import Contact from "./Component/Contact/Contact.js";
-import Footer from "./Component/Footer/Footer.js";
 import Work from "./Component/Work/Work.js";
+import Contact from "./Component/Contact/Contact.js";
+// import Footer from "./Component/Footer/Footer.js";
+
 
 
 
@@ -23,7 +24,7 @@ function App() {
       <Skills/>
       <Work/>
       <Contact/> 
-      <Footer/>
+      {/* <Footer/> */}
 
      </div>
     </div>

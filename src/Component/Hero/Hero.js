@@ -59,6 +59,7 @@ const Hero = () => {
   return (
     <div className='hero' id='/'>
       <div className='hero-text'>
+      <h1 className='hire show'>Hire a remote Unicon Dev</h1>
         <p className='code'>{code}</p>
         <p className='greeting'>{greetings}</p>
         <h1 className='heroname'>{heroName}</h1>
@@ -71,6 +72,7 @@ const Hero = () => {
         </ul>
       </div>
       <div className='hero-img'>
+      <h1 className='hire hide'>Hire a remote Unicon Dev</h1>
         <img src={dev} alt="babajide" />
       </div>
       
