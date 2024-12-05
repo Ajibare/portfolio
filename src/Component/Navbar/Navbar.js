@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import { data } from './data.js';
-import logo from '../../Asset/logo.png';
+// import logo from '../../Asset/logo.png';
+import download from '../../Asset/download.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header className= {`navbar ${isMenuOpen ? 'nav-open' : ''}`}>
-      <img src={logo} alt="Portfolio logo" className='logo' />
+      <img src={download} alt="Portfolio logo" className='logo' />
       <nav>
         <ul>
           {data.map(({ id, title, url }) => (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Work.css';
-import Title from '../Title/Title';
+ 
 import onlinestore from '../../Asset/Storefront .png'
 import event from '../../Asset/event.png'
 import school from  '../../Asset/school.png'
@@ -56,7 +56,6 @@ const Work = () => {
 
   return (
     <>
-      <Title title="Work" />
       <div className="grid-container" id='/work'>
         {details.map(({ id, image, liveLink, codeLink, title}) => (
           <div key={id} className="grid-item">

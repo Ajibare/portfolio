@@ -3,10 +3,10 @@ import './index.css'
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar.js";
 import Hero from './Component/Hero/Hero.js'
-import About from './Component/About/About.js'
-import Skills from "./Component/Skills/Skills.js";
-import Work from "./Component/Work/Work.js";
 import Contact from "./Component/Contact/Contact.js";
+import Expertise from "./Component/Expertise/Expertise.js";
+import Experience from './Component/Experience/Experience.js'
+import Project from './Component/Project/Project.js'
 // import Footer from "./Component/Footer/Footer.js";
 
 
@@ -20,9 +20,9 @@ function App() {
      </BrowserRouter>
      <div className="container">
       <Hero/>
-      <About/>
-      <Skills/>
-      <Work/>
+      <Expertise/>
+      <Project/>
+      <Experience/>
       <Contact/> 
       {/* <Footer/> */}
 

@@ -1,0 +1,135 @@
+:root{
+  --bg-primary-color:#0A192F; 
+  --text-color: #CCD6F6;
+  --title: #8892B0;
+  --bg-btn-color:#800000;
+  --code : yellow;
+  --line-height: 1.4;
+  --padding: 2rem;
+  --small-font:14px;
+  --big-font: 22px;
+  --font-weight:550;
+  --border:1px solid #CCD6F6;
+  --br: 5px;
+  --pl:1.5rem;
+  --pr:1.5rem;
+  --pb:1.5rem;
+  --pt:1.5rem;
+  --mt:1rem;
+  --mb:1rem;
+  --ml:1rem;
+  --mr:1rem;
+}
+
+.expertise {
+  text-align: center;
+  color: white;
+background: #190b00;
+  padding: 2rem;
+}
+
+.expertise_h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.expertise-grid {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+  /* border: 1px solid #fff; */
+  flex-wrap: wrap;
+}
+
+.expertise-card {
+  padding: 1.5rem;
+  width: 30%;
+  min-width: 300px;
+  text-align: left;
+  border: 2px solid #fff;
+}
+
+.expertise_title{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: row;
+  font-size: 20px;
+  margin-bottom: 3rem;
+}
+
+.expertise_title h3{
+  width: 65%;
+  margin:0 auto;
+  text-align: start;
+  /* border: 1px solid red; */
+}
+
+.icon_title img{
+  width: 50px;
+}
+
+.down_column{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-direction: row;
+  font-size: 16px;
+  margin-bottom: 3rem; 
+}
+.line{
+  text-align: center;
+  margin: 0 auto;
+  height: 100px;
+  width: 2px;
+  background-color:#CCD6F6;
+}
+
+.decsription{
+  margin-top: 2rem;
+  text-align: start;
+}
+
+
+.underlay img{
+  width: 70%;
+  transform: skew(10deg) translateY(-28%);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .expertise_h1 {
+    font-size: 3rem; /* Reduce title font size for smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  .expertise-grid {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .expertise-card {
+    width: 90%; /* Expand card width for smaller screens */
+    margin-bottom: 1rem;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .expertise_h1 {
+    font-size: 2.5rem; /* Further reduce title font size */
+  }
+
+  .expertise-card {
+    padding: 1rem; /* Reduce padding */
+    width: 100%; /* Make cards take up full width */
+  }
+
+
+
+ 
+}

@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import './Contact.css';
-import Title from '../Title/Title';
+import { FaEnvelope } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     const data = {
       service_id: 'service_39mugn6',
@@ -41,17 +46,29 @@ const Contact = () => {
       }
     } catch (error) {
       alert('Oops... ' + error.message);
+    }finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
+    <>
     <div className='contact-form' id='/contact'>
       <div className='contact'>
-        <Title title='Contact'/>
-        <p>\\ Submit the form below or shoot me an email  
-          <a href="mailto:babajideajibare@gmail.com"> babajideajibare@gmail.com</a>
-        </p>
+      <h1 className='hire show'>Hire a remote Unicon Dev</h1>
+      <h2 className='avaliable'>Available for select freelance opportunities</h2>
+      <p className='help'>Got an exciting project? Reach out to me via email or contact me directly for instant messaging!</p>
+
+        {/* <p className='mail'><a href="mailto:babajideajibare@gmail.com"> babajideajibare@gmail.com</a></p> */}
+        <ul className='react-icon'>
+          <li><a href="mailto:babajideajibare@gmail.com"><FaEnvelope size={35} color='#8892B0'/></a></li>
+          <li><a href="https://www.linkedin.com/in/ajibare-babajide-94452a248/"><FaLinkedinIn size={35} color='#8892B0'/></a></li>
+          <li><a href="https://x.com/SmartAbjob"><FaTwitter size={35} color='#8892B0'/></a></li>
+          <li><a href="https://github.com/Ajibare"><FaGithub size={35} color='#8892B0'/></a></li>
+        </ul>
+        
       </div>
+
       <form onSubmit={handleSubmit}>
         <p>
           <input 
@@ -85,10 +102,14 @@ const Contact = () => {
           ></textarea> 
         </p>
         <div className='btn'>
-          <button type='submit'>Let's Collaborate &#8594;</button>
+        <button type='submit' disabled={isSubmitting}>
+  {isSubmitting ? 'Sending...' : "Let's Collaborate →"}
+</button>
+          {/* <button type='submit'>Let's Collaborate &#8594;</button> */}
         </div>
       </form>
     </div>
+    </>
   );
 }
 

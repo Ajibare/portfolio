@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  background: var(--bg-primary-color);
+  /* background: var(--bg-primary-color); */
 }
 
 body{
@@ -35,8 +35,10 @@ body{
 
 
 .container{
-  width: 90%;
+  /* width: 90%; */
   /* border: 1px solid red; */
   margin: auto;
   align-items: center;
+  color: #fff;
+  background: #190b00;
 }

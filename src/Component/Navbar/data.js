@@ -1,27 +1,24 @@
 export const data =[
   {
     id: 1,
-    title:'Home',
+    title:'// Home',
     url : '/'
   },
-
   {
     id: 2,
-    title:'About',
-    url : '/about'
+    title:' // Expertise',
+    url : '/expertise'
   },
   {
     id: 3,
-    title:'Skills',
-    url : '/skill'
+    title:' // Work',
+    url : '/project'
   },
-
   {
     id: 4,
-    title:'Work',
-    url : '/work'
+    title:'// Experience',
+    url : '/experience'
   },
-
   {
     id: 5,
     title:'Contact',

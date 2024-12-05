@@ -3,17 +3,17 @@
   "name": "Ajibare babajide portfolio",
   "icons": [
     {
-      "src": "../src/Asset/logo.png",
+      "src": "../src/Asset/download.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "../src/Asset/logo.png",
+      "src": "../src/Asset/download.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "../src/Asset/logo.png",
+      "src": "../src/Asset/download.png",
       "type": "image/png",
       "sizes": "512x512"
     }

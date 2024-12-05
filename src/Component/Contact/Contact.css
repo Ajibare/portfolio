@@ -1,153 +1,173 @@
-:root{
-  --bg-primary-color:#0A192F; 
-  --text-color: #CCD6F6;
-  --title: #8892B0;
-  --bg-btn-color:#800020;
-  --code : yellow;
-  --line-height: 1.4;
-  --padding: 2rem;
-  --small-font:14px;
-  --big-font: 22px;
-  --font-weight:550;
-  --border:1px solid #CCD6F6;
-  --br: 5px;
-  --pl:1.5rem;
-  --pr:1.5rem;
-  --pb:1.5rem;
-  --pt:1.5rem;
-  --mt:1rem;
-  --mb:1rem;
-  --ml:1rem;
-  --mr:1rem;
+.contact-form {
+  padding: 80px;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
 }
 
-.contact-form {
-  padding: 20px;
-  color: var(--text-color);
+.hire{
+  color: hsl(0, 0%, 28%);
+  text-align: start;
+  font-size: 30px!important;
+  font-weight: bold!important;
+  letter-spacing: 7px!important;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.hire{
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+.avaliable{
+  margin-bottom: 1rem;
+  font-size: 40px;
+  letter-spacing: 7px!important;
+}
+
+.help{
+  white-space: wrap;
+  line-height: 2rem;
+  letter-spacing: 2px!important;
+}
+
+
+.react-icon {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.react-icon li {
+  list-style: none;
+}
+
+.react-icon a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.react-icon a:hover {
+  transform: rotate(360deg) skew(-28deg);
+  border-color: #ff7300;
 }
 
 form p {
   margin-bottom: 15px;
 }
 
+.contact-form {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjusted for smaller screens */
+  justify-content: center;
+  gap: 20px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
 form input,
 form textarea {
-  background-color: var(--text-color);
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  color: var(--text-color);
+  padding: 12px;
+  font-size: 16px;
+  border: none; /* Removes other borders */
+  border-bottom: 1px solid #ff7300; /* Adds the bottom border */
+  border-radius: 0; /* Removes rounded corners */
+  background-color: transparent !important; 
 }
 
-.btn {
-  text-align: center;
+form textarea {
+  resize: vertical; /* Allows vertical resizing only */
 }
 
-.btn button {
-  font-size: var(--small-font);
-  padding: 10px 20px;
-  border: 1px solid var(--text-color);
-  border-radius: 5px;
-  color:var(--text-color) ;
-  cursor: pointer;
-
-}
-
-.btn button:hover {
-  background-color: maroon;
-}
-
-.contact-form{
-  width: 800px;
-  margin : 0 auto;
-  text-align: start;
-  justify-content: start;
-  margin-bottom: 2rem;
-}
-
-.contact h2{
-  font-size: 30px;
-}
-
-.contact p{
-  font-size: var(--small-font);
-  margin-bottom: 2rem;
-}
-
-.contact p a{
-  text-decoration: none;
-  color: yellow;
+form input:focus,
+form textarea:focus {
+  outline: none; /* Removes the default focus outline */
+  border-bottom: 2px solid #ff4300; /* Change bottom border color on focus */
 }
 
 .btn{
   text-align: center;
 }
 
-
-.underline {
-  width: 100px;
-  background-color: maroon;
-  height: 3px;
-  border-radius: 3px;
-}
-.underline2 {
-  width: 100px;
-  text-align: center;
-  margin: 0 auto;
-  background-color: maroon;
-  height: 3px;
-  border-radius: 3px;
-}
-
-.contact-form {
-  padding: 20px;
-  color: var(--text-color);
-  width: 100%; 
-  max-width: 800px; 
-  margin: 0 auto;
-}
-
-form p {
-  margin-bottom: 15px;
-}
-
-form input,
-form textarea {
-  background-color:var(--text-color);    
-  width: 100%;
-  padding: 10px;
-  border: 1px solid white; 
-  border-radius: 5px;
-  color: black;
-  font-size: var(--small-font);
-}
-
-form textarea {
-  resize: vertical; 
-}
-
-.btn {
-  text-align: center;
-}
-
 .btn button {
-  font-size: var(--small-font);
-  padding: 10px 20px;
-  border: 2px solid var(--text-color);
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #ff7300;
   border-radius: 5px;
-  color:var(--text-color) ;
+  color: #fff;
   cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  background-color: #ff7300;
 }
 
 .btn button:hover {
-  background-color: maroon;
+  background-color: transparent !important;
+  color: #ff7300;
 }
 
 @media (max-width: 768px) {
   .contact-form {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .hire {
+    font-size: 24px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
     padding: 15px;
-    width: 90%;
+  }
+
+  .contact h2 {
+    font-size: 18px;
+  }
+
+  .hire {
+    font-size: 20px;
   }
 
   form input,
@@ -157,34 +177,7 @@ form textarea {
   }
 
   .btn button {
-    font-size: 16px;
-    padding: 12px 25px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
-
-@media (max-width: 480px) {
-  .contact-form {
-    padding: 10px;
-    width: 100%; 
-  }
-
-  .contact h2 {
-    font-size: 20px;
-  }
-
-  .contact p {
-    font-size: 14px;
-  }
-
-  form input,
-  form textarea {
-    padding: 6px;
-    font-size: 14px;
-  }
-
-  .btn button {
-    font-size: 14px;
-    padding: 10px 20px;
-  }
-} 
-

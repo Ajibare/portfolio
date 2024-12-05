@@ -1,0 +1,158 @@
+.mywork {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.mywork_content {
+  text-align: center;
+  border: none;
+}
+
+.mywork_content h1 {
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.mywork_content p {
+  font-size: 20px;
+  max-width: 500px;
+  margin: 10px auto;
+  text-align: start;
+  line-height: 1.5;
+}
+
+.animicontainer {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-30deg) skew(5deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.animicontainer:hover {
+  transform: rotate(0deg) skew(0deg);
+}
+
+.animicontainer img {
+  position: absolute;
+  width: 80%;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.animicontainer:hover img:nth-child(1) {
+  transform: translate(40px, -40px);
+  opacity: 0.4;
+}
+.animicontainer:hover img:nth-child(2) {
+  transform: translate(80px, -80px);
+  opacity: 0.6;
+}
+.animicontainer:hover img:nth-child(3) {
+  transform: translate(120px, -120px);
+  opacity: 0.8;
+}
+.animicontainer:hover img:nth-child(4) {
+  transform: translate(160px, -160px);
+  opacity: 1;
+}
+
+.project-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-card {
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: start;
+}
+
+.project-content h3 {
+  margin: 0;
+  font-size:18px;
+  display: inline-flex;
+  gap: 20px !important;
+}
+
+.project-content p {
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+  .mywork {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .mywork_content h1 {
+    font-size: 40px; 
+  }
+
+  .mywork_content p {
+    font-size: 18px; 
+    max-width: 100%; 
+  }
+
+  .animicontainer {
+    margin-top: 5rem;
+    width: 400px; 
+    height: 400px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .mywork_content h1 {
+    font-size: 30px;
+  }
+
+  .mywork_content p {
+    font-size: 16px; 
+  }
+
+  .animicontainer {
+    width: 350px; 
+    height: 350px;
+  }
+
+  .project-card {
+    width: 100%; 
+    max-width: 100%; 
+  }
+
+  .project-content h3 {
+    font-size: 14px; 
+  }
+
+  .project-content p {
+    font-size: 10px; 
+  }
+}

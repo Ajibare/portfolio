@@ -1,0 +1,191 @@
+.experience {
+  padding: 2rem;
+  background: #190b00;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.experience h1 {
+  font-size: 3rem;
+  width: 300px;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.experience-item {
+  background-color: transparent !important;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 700px;
+  margin: auto;
+  border: 1px solid #233554;
+  margin-bottom: .3rem;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #ff7300;
+  color: white;
+  border-radius:10px ;
+}
+
+.experience_title {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.experience_period{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.period {
+  font-weight: bold;
+}
+
+.toggle-icon {
+  font-size: 16px;
+}
+
+.experience-content {
+  padding: 1rem;
+  background-color: transparent !important;
+}
+
+.experience_dropdown{
+  display :inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.experience_dropdown a{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.myskills {
+  margin-top: 1rem;
+}
+
+.skill-badge {
+  display:inline-flex ;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding:8px 16px ;
+  margin: 0.5rem;
+  gap: 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border:none ;
+  background-color:#ff730080;;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .experience h1 {
+    font-size: 2.5rem; /* Reduce the font size of the title */
+    width: auto; /* Allow title width to adjust dynamically */
+    margin: 1rem auto; /* Adjust margin for smaller screens */
+  }
+
+  .experience-item {
+    width: 100%; /* Set item width to 100% for better fit */
+    margin: 0.5rem auto; /* Adjust margins for smaller screens */
+  }
+
+  .experience-header {
+    padding: 0.8rem; /* Reduce padding for better fit */
+  }
+
+  .experience_title {
+    font-size: 14px; /* Reduce font size */
+    margin-right: 1rem; /* Adjust spacing for smaller screens */
+  }
+
+  .experience_period {
+    gap: 1rem; 
+  }
+
+  .period {
+    font-weight: bold;
+  }
+
+  .experience-dropdown {
+    flex-direction: column; /* Stack the dropdown links vertically */
+    gap: 1rem; /* Adjust the gap between links */
+    margin-bottom: 1.5rem;
+  }
+
+  .experience_dropdown a {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .myskills {
+    margin-top: 1rem;
+  }
+
+  .skill-badge {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 6px 12px; /* Adjust padding for smaller screens */
+    gap: 10px; /* Adjust gap between skill badges */
+  }
+}
+
+/* Further adjustments for very small screens (e.g., smartphones in portrait mode) */
+@media (max-width: 480px) {
+  .experience h1 {
+    font-size: 2rem; /* Further reduce the font size */
+  }
+
+  .experience-item {
+    width: 100%; /* Ensure item width is 100% on very small screens */
+    margin: 0.5rem auto; /* Adjust margins for very small screens */
+  }
+
+  .experience-header {
+    padding: 0.6rem; /* Further reduce padding */
+  }
+
+  .experience_title {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .experience_period {
+    gap: 1rem; /* Reduce gap between period items */
+  }
+
+  .experience-dropdown {
+    gap: 0.8rem; /* Reduce the gap between dropdown links */
+  }
+
+  .experience_dropdown a {
+    font-size: 12px; /* Reduce font size of dropdown links */
+  }
+
+  .skill-badge {
+    font-size: 11px; /* Further reduce font size */
+    padding: 4px 10px; /* Adjust padding */
+  }
+}
