@@ -13,6 +13,7 @@ body{
 
 }
 
+
 :root{
   --bg-primary-color:#0A192F; 
   --text-color: #CCD6F6;
@@ -41,4 +42,11 @@ body{
   align-items: center;
   color: #fff;
   background: #190b00;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
 }
