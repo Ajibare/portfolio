@@ -9,7 +9,9 @@
 }
 
 body{
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  border: 1px solid red;
 
 }
 
@@ -36,8 +38,6 @@ body{
 
 
 .container{
-  /* width: 90%; */
-  /* border: 1px solid red; */
   margin: auto;
   align-items: center;
   color: #fff;

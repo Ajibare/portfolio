@@ -1,3 +1,6 @@
+/* body{
+  overflow-x: hidden;
+} */
 .mywork {
   display: grid;
   grid-template-columns: 1fr 1fr;
