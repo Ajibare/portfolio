@@ -8,7 +8,7 @@ const experiences = [
     period: 'Jan 2024 - Oct 2024',
     location: 'Ikere-Ekiti, Nigeria',
     website: 'weareomnific.com',
-    description: 'Developing front-end and mobile app solutions (B2C, B2B) in Travel Tech on React/Next.js framework and Flutter SDK.',
+    description: 'Developed responsive and dynamic websites, optimized for performance and accessibility, while collaborating with cross-functional teams to deliver high-quality solutions.',
     skills: ['WordPress', 'Flutter SDK', 'Responsive Design', 'Bootstrap', 'Performance Optimization', 'Frontend Development'],
   },
   {
@@ -16,7 +16,7 @@ const experiences = [
     period: 'Jun 2024 - Oct 2024',
     location: 'Ikere-Ekiti, Nigeria',
     website: 'weareomnific.com',
-    description: 'Worked on dynamic marketing dashboards and internal tools.',
+    description: 'Delivered engaging lessons on web development technologies, mentoring aspiring developers and ensuring hands-on proficiency in tools like HTML, CSS, JavaScript, and WordPress.',
     skills: ['Team Collaboration','HTML', 'CSS', 'Data Visualization Tools', 'Good Communication', 'Tech Savy'],
 
   },
@@ -25,7 +25,7 @@ const experiences = [
     period: 'Sept 2024 - Present',
     location: 'Remote',
     website: 'cardily-website-staging.onrender.com',
-    description: 'Worked on dynamic marketing dashboards and internal tools.',
+    description: 'Specialized in creating user-centric web applications using React.js and Next.js, enhancing user experiences through seamless UI designs.',
     skills: ['JavaScript', 'HTML', 'CSS', 'NextJs', 'Figma to Web Conversion', 'Redux'],
 
   },
@@ -34,7 +34,7 @@ const experiences = [
     period: 'Sept 2024 - Present',
     location: 'Remote',
     website: 'zillstate-zillstates-projects.vercel.app',
-    description: 'Worked on dynamic marketing dashboards and internal tools.',
+    description: 'Built interactive and scalable web components for real estate platforms, focusing on responsiveness, API integration, and React ecosystem optimization.',
     skills: ['JavaScript', 'HTML', 'CSS', 'React', 'Web3', 'Google APIs Integration', 'Figma to Web Conversion'],
 
   },
@@ -43,7 +43,7 @@ const experiences = [
     period: '2024 - Present',
     location: 'Remote',
     website: 'upwork.com',
-    description: 'Delivered full-stack solutions for global clients.',
+    description: 'Provided freelance web development services, building custom solutions tailored to diverse client needs using React, WordPress, and modern frontend technologies.',
     skills: ['React', 'Next.js','JavaScript', 'WordPress', 'HTML', 'CSS', 'Tailwind CSS & Bootstrap','Figma to Web Conversion', 'SEO Optimization', 'Google APIs Integration']
     
 ,
@@ -53,7 +53,7 @@ const experiences = [
     period: '2024 - Present',
     location: 'Remote',
     website: 'truelancer.com',
-    description: 'Delivered full-stack solutions for global clients.',
+    description: 'Delivered high-quality freelance web projects, including WordPress customization and React.js frontend development, meeting tight deadlines with precision.',
     skills:  ['React', 'Next.js','JavaScript', 'WordPress', 'HTML', 'CSS', 'Tailwind CSS & Bootstrap','Figma to Web Conversion', 'SEO Optimization', 'Google APIs Integration']
   },
 ];
@@ -67,7 +67,7 @@ const Experience = () => {
 
   return (
     <>
-    <section className="experience">
+    <section className="experience" id='/experience'>
       <h1>Professional Experience</h1>
       {experiences.map((experience, index) => (
         <div key={index} className="experience-item">

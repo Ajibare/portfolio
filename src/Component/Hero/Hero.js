@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
  return(
-  <div className='hero'>
+  <div className='hero' id='/'>
   <div class="dark fire">
      <h1 class="Blazing" contenteditable="true">Ajibare Babajide B.</h1>
    </div>
@@ -23,7 +23,7 @@ const Hero = () => {
           rel="noopener noreferrer"
         >  <button className="looking">I'm looking to hire &#10148;</button></a>
    </div>
-   <Link to="target-section" smooth={true} duration={500}>
+   <Link to="/contact" smooth={true} duration={100}>
         <div className="indicator">
           <span></span>
           <span></span>

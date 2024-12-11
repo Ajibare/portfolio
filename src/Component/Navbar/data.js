@@ -21,9 +21,7 @@ export const data =[
   },
   {
     id: 5,
-    title:'Contact',
+    title:'// Contact',
     url : '/contact'
   },
-
-
 ]

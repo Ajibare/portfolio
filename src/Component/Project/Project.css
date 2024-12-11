@@ -1,6 +1,3 @@
-/* body{
-  overflow-x: hidden;
-} */
 .mywork {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -9,7 +6,6 @@
 
 .mywork_content {
   text-align: center;
-  border: none;
 }
 
 .mywork_content h1 {
@@ -19,48 +15,12 @@
 
 .mywork_content p {
   font-size: 20px;
-  max-width: 500px;
-  margin: 10px auto;
   text-align: start;
   line-height: 1.5;
-}
-
-.animicontainer {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(-30deg) skew(5deg);
-  transition: transform 0.3s ease-in-out;
-}
-
-.animicontainer:hover {
-  transform: rotate(0deg) skew(0deg);
-}
-
-.animicontainer img {
-  position: absolute;
-  width: 80%;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.animicontainer:hover img:nth-child(1) {
-  transform: translate(40px, -40px);
-  opacity: 0.4;
-}
-.animicontainer:hover img:nth-child(2) {
-  transform: translate(80px, -80px);
-  opacity: 0.6;
-}
-.animicontainer:hover img:nth-child(3) {
-  transform: translate(120px, -120px);
-  opacity: 0.8;
-}
-.animicontainer:hover img:nth-child(4) {
-  transform: translate(160px, -160px);
-  opacity: 1;
+  white-space: wrap;
+  line-height: 2rem;
+  letter-spacing: 2px!important;
+  margin-left: 8rem;
 }
 
 .project-container {
@@ -108,8 +68,6 @@
   font-size: 14px;
 }
 
-
-
 @media (max-width: 768px) {
   .mywork {
     grid-template-columns: 1fr;
@@ -122,14 +80,15 @@
 
   .mywork_content p {
     font-size: 18px; 
-    max-width: 100%; 
+    max-width: 100%;
+    margin: 0; 
   }
-
-  .animicontainer {
-    margin-top: 5rem;
-    width: 400px; 
-    height: 400px; 
-  }
+  
+  .twist-animation {
+    width: 80%;
+    height: 80%;
+}
+  
 }
 
 @media (max-width: 480px) {
@@ -141,15 +100,12 @@
     font-size: 16px; 
   }
 
-  .animicontainer {
-    width: 350px; 
-    height: 350px;
-  }
-
   .project-card {
     width: 100%; 
     max-width: 100%; 
   }
+
+
 
   .project-content h3 {
     font-size: 14px; 
@@ -157,5 +113,82 @@
 
   .project-content p {
     font-size: 10px; 
+  }
+
+  .twist-animation {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Main container */
+.twist-animation {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px;
+  transform: skew(-10deg);
+
+}
+
+
+.twist-animation img {
+  position: absolute;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  opacity: 0; 
+  animation: twistAnimation 12s infinite ease-in-out; 
+  transform-origin: center; 
+}
+
+.twist-animation img:nth-child(1) {
+  animation-delay: 0s;
+}
+.twist-animation img:nth-child(2) {
+  animation-delay: 2s;
+}
+.twist-animation img:nth-child(3) {
+  animation-delay: 4s;
+}
+.twist-animation img:nth-child(4) {
+  animation-delay: 6s;
+}
+.twist-animation img:nth-child(5) {
+  animation-delay: 8s;
+}
+.twist-animation img:nth-child(6) {
+  animation-delay: 10s;
+}
+
+/* Keyframes for twisting animation */
+@keyframes twistAnimation {
+  0% {
+    opacity: 0; 
+    transform: rotate(0deg) skew(0deg) translate(0, 0); 
+  }
+  10% {
+    opacity: 1; 
+    transform: rotate(20deg) skew(10deg) translate(20px, -20px); 
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(-30deg) skew(-10deg) translate(-30px, 30px); 
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(40deg) skew(15deg) translate(50px, -50px); 
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(-50deg) skew(-20deg) translate(-60px, 60px); 
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg) skew(0deg) translate(0, 0); 
   }
 }

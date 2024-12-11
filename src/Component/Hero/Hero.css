@@ -1,35 +1,35 @@
-:root{
-  --bg-primary-color:#0A192F; 
+:root {
+  --bg-primary-color: #0A192F;
   --text-color: #CCD6F6;
   --title: #8892B0;
-  --bg-btn-color:#800000;
-  --code : yellow;
+  --bg-btn-color: #800000;
+  --code: yellow;
   --line-height: 1.4;
   --padding: 2rem;
-  --small-font:14px;
+  --small-font: 14px;
   --big-font: 22px;
-  --font-weight:550;
-  --border:1px solid #CCD6F6;
+  --font-weight: 550;
+  --border: 1px solid #CCD6F6;
   --br: 5px;
-  --pl:1.5rem;
-  --pr:1.5rem;
-  --pb:1.5rem;
-  --pt:1.5rem;
-  --mt:1rem;
-  --mb:1rem;
-  --ml:1rem;
-  --mr:1rem;
+  --pl: 1.5rem;
+  --pr: 1.5rem;
+  --pb: 1.5rem;
+  --pt: 1.5rem;
+  --mt: 1rem;
+  --mb: 1rem;
+  --ml: 1rem;
+  --mr: 1rem;
 }
 
 .hero {
-  position: relative; 
+  position: relative;
   text-align: center;
   margin: 0 auto;
   background-image: url(../../Asset/iphone.jpg);
   background-size: cover;
   width: 100%;
   height: 90vh !important;
-  z-index: 0; 
+  z-index: 0;
 }
 
 .hero::before {
@@ -40,8 +40,8 @@
   width: 100%;
   height: 100%;
   background-color: #190b00;
-  opacity: 0.7; 
-  z-index: -1; 
+  opacity: 0.7;
+  z-index: -1;
 }
 
 .fire {
@@ -52,9 +52,9 @@
   background-position: center center;
   background-size: 1000px 200px;
   border-radius: 10px;
-  font-family: 'Akronim';
+  /* font-family: 'Akronim'; */
   overflow: hidden;
-    text-align: center;
+  text-align: center;
   vertical-align: middle;
 
 }
@@ -75,10 +75,10 @@
   min-width: 50px;
   outline: none;
   vertical-align: middle;
-    
+
   text-shadow:
-        0 3px 20px red,
-        0 0 20px red,
+    0 3px 20px red,
+    0 0 20px red,
     0 0 10px orange,
     4px -5px 6px yellow,
     -4px -10px 10px yellow,
@@ -87,40 +87,54 @@
 }
 
 @keyframes Blazing {
-  0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 0 10px orange,
-    0 0 0 yellow,
-    0 0 5px yellow,
-    -2px -5px 5px yellow,
-    4px -10px 10px yellow; }
-  25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
-    0 0 20px orange,
-    0 0 5px yellow,
-    -2px -5px 5px yellow,
-    3px -10px 10px yellow,
-    -4px -15px 20px yellow; }
-  50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 -5px 10px orange,
-    -2px -5px 5px yellow,
-    3px -10px 10px yellow,
-    -4px -15px 20px yellow,
-    2px -20px 30px rgba(255,255,0,0.5); }
-  75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 -5px 10px orange,
-    3px -5px 5px yellow,
-    -4px -10px 10px yellow,
-    2px -20px 30px rgba(255,255,0,0.5),
-    0px -25px 40px rgba(255,255,0,0)}
-  100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-    0 0 10px orange,
-    0 0 0 yellow,
-    0 0 5px yellow,
-    -2px -5px 5px yellow,
-    4px -10px 10px yellow; }
+  0% {
+    text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
+
+  25% {
+    text-shadow: 0 3px 20px red, 0 0 30px red,
+      0 0 20px orange,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow;
+  }
+
+  50% {
+    text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      -2px -5px 5px yellow,
+      3px -10px 10px yellow,
+      -4px -15px 20px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5);
+  }
+
+  75% {
+    text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 -5px 10px orange,
+      3px -5px 5px yellow,
+      -4px -10px 10px yellow,
+      2px -20px 30px rgba(255, 255, 0, 0.5),
+      0px -25px 40px rgba(255, 255, 0, 0)
+  }
+
+  100% {
+    text-shadow: 0 3px 20px red, 0 0 20px red,
+      0 0 10px orange,
+      0 0 0 yellow,
+      0 0 5px yellow,
+      -2px -5px 5px yellow,
+      4px -10px 10px yellow;
+  }
 }
 
 
-.hero_content p{
+.hero_content p {
   font-size: 30px;
   color: #fff;
   font-weight: bolder;
@@ -128,67 +142,76 @@
   /* color: red; */
 }
 
-  .indicator{
-    position:relative;
-    width:30px;
-    height:30px;
-    margin:40px auto;
-    cursor: pointer;
-    transform:rotate(45deg);
-    span{
-      position:absolute;
-      left:0;
-      top:0;
-      width:100%;
-      height:100%;
-      box-sizing:border-box;
-      border:none;
-      border-bottom:3px solid #fff;
-      border-right:3px solid #fff;
-      animation:animate 1s linear infinite;
-      &:nth-child(1){
-        top:-30px;
-        left:-30px;
-        animation-delay:0s;
-      }
-      &:nth-child(2){
-        top:-15px;
-        left:-15px;
-        animation-delay:0.2s;
-      }
-      &:nth-child(3){
-        top:0;
-        left:0;
-        animation-delay:0.4s;
-      }
-      &:nth-child(4){
-        top:15px;
-        left:15px;
-        animation-delay:0.6s;
-      }
-      &:nth-child(5){
-        top:30px;
-        left:30px;
-        animation-delay:0.8s;
-      }
-    }
-  }
+.indicator {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 40px auto;
+  cursor: pointer;
+  transform: rotate(45deg);
 
-@keyframes animate{
-  0%{
-    border-color:#fff;
-    transform:translate(0,0);
-  }
-   20%{
-    border-color:#fff;
-     transform:translate(15px,15px);
-  }
-   20.1%,100%{
-    border-color:#ff7300;
+  span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: animate 1s linear infinite;
+
+    &:nth-child(1) {
+      top: -30px;
+      left: -30px;
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      top: -15px;
+      left: -15px;
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      top: 0;
+      left: 0;
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(4) {
+      top: 15px;
+      left: 15px;
+      animation-delay: 0.6s;
+    }
+
+    &:nth-child(5) {
+      top: 30px;
+      left: 30px;
+      animation-delay: 0.8s;
+    }
   }
 }
 
-.hireme{
+@keyframes animate {
+  0% {
+    border-color: #fff;
+    transform: translate(0, 0);
+  }
+
+  20% {
+    border-color: #fff;
+    transform: translate(15px, 15px);
+  }
+
+  20.1%,
+  100% {
+    border-color: #ff7300;
+  }
+}
+
+.hireme {
   display: flex;
   gap: 8px;
   margin: 0 auto;
@@ -197,62 +220,63 @@
   margin-bottom: 100px;
 }
 
-.hireme button{
-padding: 8px 16px;
+.hireme button {
+  padding: 8px 16px;
   gap: 8px;
-  border:none;
+  border: none;
   font-size: 16px;
   color: #fff;
 }
 
-.need{
+.need {
   background-color: #ff7300;
 }
 
- a .looking{
-  background-color: #ff730080; 
+a .looking {
+  background-color: #ff730080;
   color: #fff;
 }
 
-.arrow{
+.arrow {
   font-weight: bolder;
 }
 
 
 @media (max-width: 768px) {
   .hero {
-    height: 70vh; 
+    height: 70vh;
   }
 
   .Blazing {
-    font-size: 80px; /* Reduce text size */
+    font-size: 80px;
   }
 
   .fire {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .hero_content p {
-    font-size: 20px; 
+    font-size: 20px;
   }
+
   .hireme button {
     font-size: 16px;
     margin-top: 2rem;
-    padding: 6px 12px; 
+    padding: 6px 12px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-    height: 60vh; 
+    height: 60vh;
   }
 
   .Blazing {
-    font-size: 40px; 
+    font-size: 40px;
   }
 
   .hero_content p {
-    font-size: 20px; 
+    font-size: 20px;
   }
 
   .fire {
@@ -261,7 +285,7 @@ padding: 8px 16px;
 
   .indicator {
     width: 20px;
-    height: 20px; 
+    height: 20px;
     cursor: pointer;
   }
 
@@ -270,7 +294,4 @@ padding: 8px 16px;
     gap: 4px;
   }
 
-  /* .hireme button {
-    width: 80%; 
-  } */
 }

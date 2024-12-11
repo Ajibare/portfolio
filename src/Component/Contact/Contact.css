@@ -80,7 +80,7 @@ form p {
 .contact-form {
   padding: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Adjusted for smaller screens */
+  grid-template-columns: 1fr 1fr; 
   justify-content: center;
   gap: 20px;
 }
@@ -95,23 +95,24 @@ form {
 
 form input,
 form textarea {
+  color: #fff;
   width: 100%;
   padding: 12px;
   font-size: 16px;
-  border: none; /* Removes other borders */
-  border-bottom: 1px solid #ff7300; /* Adds the bottom border */
-  border-radius: 0; /* Removes rounded corners */
+  border: none; 
+  border-bottom: 1px solid #ff7300; 
+  border-radius: 0; 
   background-color: transparent !important; 
 }
 
 form textarea {
-  resize: vertical; /* Allows vertical resizing only */
+  resize: vertical; 
 }
 
 form input:focus,
 form textarea:focus {
-  outline: none; /* Removes the default focus outline */
-  border-bottom: 2px solid #ff4300; /* Change bottom border color on focus */
+  outline: none; 
+  border-bottom: 2px solid #ff4300; 
 }
 
 .btn{

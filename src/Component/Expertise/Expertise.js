@@ -1,35 +1,45 @@
 import React from 'react';
 import './Expertise.css';
+import software from '../../Asset/software.png'
 import react from '../../Asset/react-e00184ba.png'
 import cover from '../../Asset/background (1).png'
+import wordpress from '../../Asset/wordpress.png'
 const Expertise = () => {
   const expertiseItems = [
     {
-      title: 'Software Development',
-      description: 'Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.',
-      icon: react,
+      title: 'WordPress Wizardry',
+      description: 'Building user-friendly, responsive WordPress sites with sleek designs and custom features.',
+      icon: wordpress,
       code : '<h2>',
       seccode : '</h2>',
     },
     {
       title: 'Frontend Dev\nReact, NextJS',
-      description: 'Passionate about UI/UX. Over 5 years of experience in HTML, CSS, JS, React, and NextJS frameworks.',
+      description: 'UI/UX Specialist: Crafting intuitive, visually captivating interfaces with HTML, CSS, JS, React and Next.js frameworks.',
       icon: react,
       code : '<h2>',
       seccode : '</h2>',
     },
     {
-      title: 'Flutter Dev\nAndroid, iOS',
-      description: 'Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.',
-      icon: react,
+      title: 'Software Development',
+      description: 'Building reliable, scalable, and user-focused software tailored to meet diverse business needs.',
+      icon: software,
       code : '<h2>',
       seccode : '</h2>',
     },
+
+    // {
+    //   title: 'Responsive Design Pro',
+    //   description: 'Creating adaptable designs for flawless performance across all devices and screen sizes.',
+    //   icon: react,
+    //   code : '<h2>',
+    //   seccode : '</h2>',
+    // },
   ];
 
   return (
     <>
-    <section className="expertise">
+    <section className="expertise" id='/expertise'>
       <h1 className='expertise_h1'>My Expertise</h1>
       <div className="expertise-grid">
         {expertiseItems.map((item, index) => (

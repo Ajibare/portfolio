@@ -46,69 +46,69 @@ const Contact = () => {
       }
     } catch (error) {
       alert('Oops... ' + error.message);
-    }finally {
+    } finally {
       setIsSubmitting(false);
     }
   };
 
   return (
     <>
-    <div className='contact-form' id='/contact'>
-      <div className='contact'>
-      <h1 className='hire show'>Hire a remote Unicon Dev</h1>
-      <h2 className='avaliable'>Available for select freelance opportunities</h2>
-      <p className='help'>Got an exciting project? Reach out to me via email or contact me directly for instant messaging!</p>
+      <div className='contact-form' id='/contact'>
+        <div className='contact'>
+          <h1 className='hire show'>Hire a remote Unicon Dev</h1>
+          <h2 className='avaliable'>Available for select freelance opportunities</h2>
+          <p className='help'>Got an exciting project? Reach out to me via email or contact me directly for instant messaging!</p>
 
-        {/* <p className='mail'><a href="mailto:babajideajibare@gmail.com"> babajideajibare@gmail.com</a></p> */}
-        <ul className='react-icon'>
-          <li><a href="mailto:babajideajibare@gmail.com"><FaEnvelope size={35} color='#8892B0'/></a></li>
-          <li><a href="https://www.linkedin.com/in/ajibare-babajide-94452a248/"><FaLinkedinIn size={35} color='#8892B0'/></a></li>
-          <li><a href="https://x.com/SmartAbjob"><FaTwitter size={35} color='#8892B0'/></a></li>
-          <li><a href="https://github.com/Ajibare"><FaGithub size={35} color='#8892B0'/></a></li>
-        </ul>
-        
-      </div>
+          {/* <p className='mail'><a href="mailto:babajideajibare@gmail.com"> babajideajibare@gmail.com</a></p> */}
+          <ul className='react-icon'>
+            <li><a href="mailto:babajideajibare@gmail.com"><FaEnvelope size={35} color='#8892B0' /></a></li>
+            <li><a href="https://www.linkedin.com/in/ajibare-babajide-94452a248/"><FaLinkedinIn size={35} color='#8892B0' /></a></li>
+            <li><a href="https://x.com/SmartAbjob"><FaTwitter size={35} color='#8892B0' /></a></li>
+            <li><a href="https://github.com/Ajibare"><FaGithub size={35} color='#8892B0' /></a></li>
+          </ul>
 
-      <form onSubmit={handleSubmit}>
-        <p>
-          <input 
-            type="text"
-            name='name'
-            placeholder='Name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required 
-          />
-        </p>
-        <p>
-          <input 
-            type="email"
-            name='email'
-            placeholder='Email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </p>
-        <p>
-          <textarea
-            name="message"
-            rows='10'
-            cols='30'
-            placeholder='Message'
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          ></textarea> 
-        </p>
-        <div className='btn'>
-        <button type='submit' disabled={isSubmitting}>
-  {isSubmitting ? 'Sending...' : "Let's Collaborate →"}
-</button>
-          {/* <button type='submit'>Let's Collaborate &#8594;</button> */}
         </div>
-      </form>
-    </div>
+
+        <form onSubmit={handleSubmit}>
+          <p>
+            <input
+              type="text"
+              name='name'
+              placeholder='Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </p>
+          <p>
+            <input
+              type="email"
+              name='email'
+              placeholder='Email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </p>
+          <p>
+            <textarea
+              name="message"
+              rows='10'
+              cols='30'
+              placeholder='Message'
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            ></textarea>
+          </p>
+          <div className='btn'>
+            <button type='submit' disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : "Let's Collaborate →"}
+            </button>
+            {/* <button type='submit'>Let's Collaborate &#8594;</button> */}
+          </div>
+        </form>
+      </div>
     </>
   );
 }
