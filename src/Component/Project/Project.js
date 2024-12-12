@@ -15,7 +15,7 @@ const Project = () => {
     { id: '2', url: 'https://eatrightsociety.org/', title: 'Eat Right Society', description: 'Healthy living', img: eatrs },
     { id: '3', url: 'https://jesusarena.org/', title: 'Jesus Arena', description: 'Building hope', img:Arena },
     { id: '4', url: 'https://excefort.com/', title: 'Excefort', description: 'Environmental solutions', img: excefort},
-    { id: '6', url: '', title: 'Cardily', description: 'Ongoing Project', img: Cardily },
+    { id: '6', url: 'https://cardily-website-staging.onrender.com/', title: 'Cardily', description: 'Ongoing Project', img: Cardily },
   ];
 
   return (
