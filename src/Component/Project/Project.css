@@ -87,8 +87,13 @@
   .twist-animation {
     width: 80%;
     height: 80%;
-}
-  
+    transform: skew(0deg);
+  }
+  .twist-animation img {
+    width: 70%;
+    height: 70%;
+  }
+    
 }
 
 @media (max-width: 480px) {
@@ -116,18 +121,32 @@
   }
 
   .twist-animation {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     transform: skew(0deg);
+  }
+  .twist-animation img {
+    width: 70%;
   }
 }
 
+@media (max-width: 400px){
+  .twist-animation {
+  width: 60%;
+    height: 70%;
+    transform: skew(0deg);
+  }
+
+  .twist-animation img {
+    width: 70%;
+  }
+}
 /* Main container */
 .twist-animation {
   position: relative;
   width: 350px;
   height: 350px;
-  margin: 2rem auto;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 10px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
@@ -139,8 +158,10 @@
 
 .twist-animation img {
   position: absolute;
-  width: 100%; 
-  height: 100%; 
+  width: 90%; 
+  height: 90%; 
+  /* width: 100%; 
+  height: 100%;  */
   object-fit: cover;
   opacity: 0; 
   animation: twistAnimation 12s infinite ease-in-out; 
