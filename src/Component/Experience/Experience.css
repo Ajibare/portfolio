@@ -14,14 +14,17 @@
 }
 
 .experience-item {
-  background-color: transparent !important;
+  /* background-color: red !important; */
+  /* background-color: transparent !important; */
   margin: 1rem 0;
   border-radius: 8px;
   overflow: hidden;
   width: 700px;
   margin: auto;
-  border: 1px solid #233554;
+  /* border: 1px solid #233554; */
+  border: 1px solid #261f1f;
   margin-bottom: .3rem;
+  /* font-size: 10px; */
 }
 
 .experience-header {
