@@ -84,7 +84,7 @@
     margin: 0; 
   }
   
-  .twist-animation {
+  /* .twist-animation {
     width: 80%;
     height: 80%;
     transform: skew(0deg);
@@ -92,7 +92,7 @@
   .twist-animation img {
     width: 70%;
     height: 70%;
-  }
+  } */
     
 }
 
@@ -144,8 +144,8 @@
 /* Main container */
 .twist-animation {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px; 
